@@ -1,39 +1,37 @@
-中文文档请看这里
+## 介绍
 
-## introduced
+这是一个工具、工具的由来是因为公司要做一个模板生成页面html静态化、
 
-This is a tool, tool because of the company to do a template to generate HTML static page
+但是每个页面的数据可能不一样，就需要做这样一个生成器
 
-But each page data may not be the same, they need to do such a generator
-
-The code is very simple, made comments,
+代码很简单、做了注释、
 
 
 
-If you encounter a similar demand, can need according to oneself to **based on the project, rewrite the template and CSS, JS**
+如果遇到了类似的需求、可以根据自己的需要来**基于这个项目、改写模板和CSS、JS**
 
-## Installation and use
+## 安装和使用
 
-Do not use just to see the code:
+不使用只是为了看代码：
 
 	npm install static-generate
 
-In order to use the installation:
+安装为了使用：
 
 	npm install -g static-generate
 
 
-Method of use:
+使用方式：
 
 	sg create <fileName>
 	
-	//fileName optional parameters
-	//if you don't do is using the default JSON filling filling
-	//if fill in will be obtained from the current directory to the fileName. The JSON to render，
+	//参数fileName可选，
+	//如果不填则使用默认的JSON做填充、
+	//如果填写了会从当前目录获取到fileName.JSON去渲染，
 
-## configuration
+## 配置
 
-JSON format is as follows:
+JSON的格式如下：
 
 	{
 		"comment":"这里是注释",
@@ -64,8 +62,9 @@ JSON format is as follows:
 		]
 	}
 
-PS: if you want to own the newly created a can use:
+PS：如果想自己新创建一个可以使用：
 
 	npm install -g yo
 	npm install -g generator-cli-starter
 	yo cli-starter
+
