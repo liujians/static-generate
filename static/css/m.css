@@ -1,0 +1,241 @@
+// m.css
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+img  
+{  
+  vertical-align:bottom;  
+}  
+.m_top{
+	position: relative;
+}
+.m_top img{
+	width: 100%;
+}
+.m_top .des{
+	position: absolute;
+	bottom: 2%;
+	color: white;
+	text-align: center;
+	width: 85%;
+	left: 50%;
+	transform:translate(-50%,0);
+	font-size: 12px;
+	min-height: 64px;
+}
+.m_top .title{
+	
+}
+.m_container{
+	position: relative;
+	min-height: 800px;
+	background: #ff9900;
+}
+.content{
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	z-index: 1;
+	padding-top: 83px;
+	padding-bottom: 80px;
+}
+.item{
+	color:white;
+	margin-top: 20px;
+}
+.item .img{
+	width: 100%;
+	margin-bottom: 9px;
+}
+.item .info{
+	font-size: 12px;
+}
+.item .button{
+	width: 40px;
+	height: 40px;
+	float: right;
+	margin-right: 15px;
+}
+.item .textbox{
+	position: absolute;
+	width: 100%;
+	bottom: 16px;
+	padding-right: 10px;
+	background-color: rgba(0,0,0,.5);
+	box-sizing: border-box;
+}
+.item .textbox div{
+	text-align: right;
+}
+.saleoff{
+	position: absolute;
+	top: -10px;
+	left: 13px;
+	width: 79px;
+}
+
+.saleoff img{
+	width: 100%;
+}
+.saleoff .saleoff_text{
+	position: absolute;
+	left: 22px;
+	top: 30px;
+	font-weight: bold;
+}
+.saleoff:nth-of-type(even){
+	right: 13px;
+}
+
+.bg-top{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 0;
+}
+.bg-bottom{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	z-index: 0;
+}
+
+/* ----modal---- */
+.modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 88;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5)
+}
+.modal_box{
+	width: 300px;
+	height: 210px;
+	background: white;
+	border-radius: 4px;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+.modal_box .modal_header{
+	text-align: center;
+	line-height: 18px;
+	font-size: 18px;
+	color: #333;
+	font-weight: 600;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.modal_box .modal_content{
+	width: 210px;
+	margin: 0 auto;
+	font-size: 12px;
+}
+.modal_box .modal_content div{
+	display: flex;
+	border: solid 0.5px #e6e6e6;
+	padding: 5px;
+	margin: -1px;
+}
+.modal_box .modal_content label{
+	width: 75px;
+	font-weight: 600;
+}
+.modal_box .modal_content .input{
+	width: 110px;
+	font-size: 12px;
+	border: none;
+	outline: 0;
+}
+
+.modal_box .modal_footer .agreement{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 16px;
+}
+.modal_box .modal_footer .req{
+	width: 210px;
+  	height: 30px;
+  	border-radius: 4px;
+  	background-color: #e5625d;
+  	text-align: center;
+  	line-height: 30px;
+  	color: white;
+  	font-size: 12px;
+  	margin: 0 auto;
+}
+.modal_box .modal_footer .agreement span{
+	display: inline-block;
+	font-size: 12px;
+	line-height: 12px;
+}
+input[type=checkbox]{
+    display: none;
+}
+/*未选中的checkbox的样式*/
+.checkbox{
+	display: inline-block;
+ 	width: 12px;
+ 	height: 12px;
+ 	background: url("../img/button-default.png");
+ 	background-size: cover;
+}
+input[type=checkbox]:checked + .checkbox{
+  	background: url("../img/button-selecteed.png");
+	background-size: cover;
+}
+
+/* success */
+.success{
+	width: 300px;
+	height: 210px;
+	background: white;
+	border-radius: 4px;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	text-align: center;
+	font-size: 12px;
+	color: #666666;
+	z-index: 99;
+}
+.success img{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.blod{
+	font-weight: bold;
+}
+.success_btn{
+	margin: 20px auto;
+	width: 130px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #e5625d;
+    line-height: 30px;
+    color: white;
+}
+.success,.modal_box,.modal{
+	display: none;
+}
+.opac{
+	opacity: .5;
+}

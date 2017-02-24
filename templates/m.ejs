@@ -1,0 +1,107 @@
+<!-- m.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/m.css">
+	<script src="js/zepto.min.js"></script>
+	<script src="js/m.js"></script>
+</head>
+<body>
+	<div class="modal">
+		<div class="modal_box">
+			<div class="modal_header">
+				泰合中央广场
+			</div>
+			<div class="modal_content">
+				<div>
+					<label for="">您的称呼</label>
+					<input id="UserName" class="input" type="text" placeholder="请输入真实姓名">
+				</div>
+				<div>
+					<label for="">您的手机号</label>
+					<input id="CellPhone" class="input" type="text" placeholder="请输入手机号">
+				</div>
+			</div>
+			<div class="modal_footer">
+				<div class="agreement">
+					<label>
+					    <input id="agrCheck" type="checkbox" checked="checked">
+					    <span class="checkbox"></span>
+					</label>
+					<span>我已经阅读并同意《我爱我家新房委托协议》</span>
+				</div>
+				<div class="req">
+					立抢优惠
+				</div>
+			</div>
+		</div>
+		<div class="success">
+				<img src="img/icon-done.png" alt="">
+				<div class="blod">
+					恭喜您！抢先预约成功
+				</div>
+				<div>
+					稍后我爱我家置业顾问将联系您
+				</div>
+				<div class="success_btn">
+					确定
+				</div>
+		</div>
+	</div>
+	
+	<div class="m_top">
+		<img src="img/bg-top.png" alt="">
+		<div class="des">
+			<div class="title">
+				活动时间：【3月13日-3月17日】
+			</div>
+			<div class="text">
+				<%= activeDes %>
+			</div>
+		</div>
+	</div>
+	<div class="m_container">
+		<div class="content">
+			<% products.forEach(function(product){ %>
+				<div class="item">
+					<div style="position: relative;">
+						<img class="img" src="img/pic.png" alt="">
+						<div class="saleoff">
+							<img src="img/pic-saleoff.png" alt="">
+							<div class="saleoff_text"><%= product.saleoff %></div>
+						</div>
+						<div class="textbox">
+							<div class="building">
+								<%= product.name %>
+							</div>
+							<div>
+								<%= product.keys %>
+							</div>
+						</div>
+					</div>
+					<img class="button" src="img/button-favorable.png" alt="">
+					<div class="info">
+						<div>
+							区域：<%= product.area %>
+						</div>
+						<div>
+							亮点：<%= product.keys %>
+						</div>
+						<div>
+							价格：<%= product.price %>
+						</div>
+					</div>
+				</div>
+			<% }); %>
+		</div>
+		<img class="bg-top" src="img/bg-top2.png" alt="">
+		<img class="bg-bottom" src="img/bg-foot.png" alt="">
+	</div>
+	<script>
+       window.city = "<%= city %>"
+	</script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+// pc.css
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.body{
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+img  
+{  
+  vertical-align:bottom;  
+}  
+.m_top{
+	position: relative;
+}
+.m_top img{
+	width: 100%;
+}
+.m_top .des{
+	position: absolute;
+	bottom: 19%;
+	color: white;
+	text-align: center;
+	width: 65%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-size: 20px;
+	min-height: 104px;
+	max-height: 130px;
+	overflow: hidden;
+
+}
+.m_top .title{
+	
+}
+.m_container{
+	position: relative;
+	min-height: 1200px;
+	background: url("../img/bg-pc.png") #ff9900;
+	background-repeat: repeat-y;
+	padding-bottom: 200px;
+}
+.content{
+	padding-left: 30px;
+	padding-right: 30px;
+	position: relative;
+	z-index: 1;
+	padding-top: 1px;
+	padding-bottom: 80px;
+}
+.item{
+	color:white;
+	margin-top: 68px;
+}
+.item .img{
+	width: 100%;
+	margin-bottom: 9px;
+}
+.item .info{
+	font-size: 26px;
+}
+.info .title{
+	font-size: 44px;
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+.info .details{
+	margin-top: 25px;
+}
+.item .button{
+	height: 52px;
+	float: right;
+	margin-right: 78px;
+}
+.item .textbox{
+	position: absolute;
+	right: 10px;
+	bottom: 16px;
+}
+.item .textbox div{
+	text-align: right;
+}
+.saleoff{
+	position: absolute;
+	bottom: -169px;
+	right: 68px;
+	width: 253px;
+}
+
+.saleoff img{
+	width: 100%;
+}
+.saleoff .saleoff_text{
+	position: absolute;
+	left: 74px;
+	top: 95px;
+	font-weight: bold;
+	font-size: 50px;
+}
+.saleoff:nth-of-type(even){
+	right: 13px;
+}
+
+.bg-top{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 0;
+}
+.bg-bottom{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	z-index: 0;
+}
+
+/* ----modal---- */
+.modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 88;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5)
+}
+.modal_box{
+	width: 700px;
+  	height: 380px;
+	background: white;
+	border-radius: 4px;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 777;
+}
+.modal_box .modal_header{
+	text-align: center;
+	line-height: 38px;
+	font-size: 38px;
+	color: #333;
+	font-weight: 600;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.modal_box .modal_content{
+	width: 320px;
+	margin: 0 auto;
+	font-size: 16px;
+}
+.modal_box .modal_content div{
+	border: solid 0.5px #e6e6e6;
+	padding: 20px;
+	margin: -1px;
+}
+.modal_box .modal_content label{
+	width: 110px;
+	line-height: 20px;
+	font-weight: 600;
+	display: inline-block;
+}
+.modal_box .modal_content .input{
+	width: 160px;
+	font-size: 16px;
+	border: none;
+	outline: 0;
+	display: inline-block;
+}
+
+.modal_box .modal_footer .agreement{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 16px;
+}
+.modal_box .modal_footer .req{
+	width: 320px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #e5625d;
+  	text-align: center;
+  	line-height: 40px;
+  	color: white;
+  	font-size: 16px;
+  	margin: 0 auto;
+}
+.modal_box .modal_footer .agreement span{
+	font-size: 14px;
+	line-height: 12px;
+}
+input[type=checkbox]{
+    display: none;
+    display: inline-block\9;
+}
+/*未选中的checkbox的样式*/
+.checkbox{
+	display: inline-block;
+	display: none\9;
+ 	width: 12px;
+ 	height: 12px;
+ 	background: #999999;
+	border-radius: 2px; 	
+}
+/*不兼容IE8*/
+/*input[type=checkbox]:checked + .checkbox{
+  	background: url("../img/button-selecteed.png");
+	background-size: cover;
+}*/
+.mycheck{
+	background: url("../img/button-selecteed.png");
+	background-size: cover;
+}
+
+/* success */
+.success{
+	width: 700px;
+    height: 380px;
+    border-radius: 8px;
+	background: white;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	text-align: center;
+	font-size: 16px;
+	color: #666666;
+	z-index: 777;
+}
+.success img{
+	width: 92px;
+  	height: 92px;
+	margin-top: 69px;
+	margin-bottom: 27px;
+}
+.blod{
+	font-weight: bold;
+}
+.success_btn{
+	margin: 36px auto;
+	width: 140px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #e5625d;
+    line-height: 40px;
+    color: white;
+}
+
+.success,.modal_box,.modal{
+	display: none;
+}
+.opac{
+	opacity: .5;
+}
