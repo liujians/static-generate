@@ -1,4 +1,4 @@
-中文文档请看这里
+中文文档请看[这里](https://github.com/liujians/static-generate/blob/master/zh-cn.md)
 
 ## introduced
 
