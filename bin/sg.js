@@ -3,6 +3,7 @@
 var program = require('commander');
 var info = require('../package.json');
 var Sg_global = require('../lib/sg_global');
+
 const sg_global = new Sg_global();
 
 program
