@@ -1,7 +1,7 @@
 {
   "name": "static-generate",
   "description": "the static page generator",
-  "version": "1.1.6",
+  "version": "1.2.8",
   "keywords": [
     "toolkit",
     "cli",

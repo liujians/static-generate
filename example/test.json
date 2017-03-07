@@ -1,4 +1,5 @@
 {
+	"reqUrl":"https://ecapi.maifangbar.com/v1/page/activity_registration",
 	"comment":"这里是注释",
 	"activeDes":"活动说明：通过本次活动报名参加的用户，可享受我爱我家与开发商联合的购房优惠，具体优惠即可购房源以开发商售楼处公示为准。",
 	"city":"成都",
